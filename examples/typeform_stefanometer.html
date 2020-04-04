@@ -24,7 +24,7 @@
 	}
 	.intro p{
 		color: #fff;
-		font-family: futura;
+		font-family: arial;
 	}
 
 	/* Centered texts in each section
@@ -37,22 +37,27 @@
 	* --------------------------------------- */
 	#header, #footer{
 		position:fixed;
-		height: 30px;
+		height: 40px;
 		display:block;
 		width: 100%;
 		background: #333;
 		z-index:9;
 		text-align:center;
 		color: #f2f2f2;
-		padding: 20px 0 0 0;
-		font-family: rockwell;
+		padding: 15px 0 0 0;
+
 	}
 
 	#header{
 		top:0px;
+		font-weight: lighter;
+		font-style: italic;
+		font-size: 8;
 	}
 	#footer{
+		font-style: normal;
 		bottom:0px;
+		font-family: rockwell;
 	}
 
 	/* Backgrounds will cover all the section
@@ -84,10 +89,31 @@
 	}*/
 
 			img {
-    			max-width:40%;
+    		   max-width:40%;
    			   height:auto;
    			   padding-top: 5%;
 			}
+	
+	#se {
+		float: left;
+		margin-left: 0px 0px 0px 30px;
+		padding-left: 8%;
+		padding-bottom: 24.5%;
+
+	}
+
+	#gb {
+		float: right;
+margin-right: 0px 0px 0px 30px;
+padding-right: 8%;
+padding-bottom: 24.5%;
+	}
+	
+	.a {
+  color: whitesmoke;
+}
+
+
 
 	/* Defining each section background and styles
 	--------------------------------------- */
@@ -156,7 +182,7 @@
 </head>
 <body>
 
-<div id="header">Stefanometern!
+<div id="header">"Det kommer några få, avgörande stunder i livet då du måste göra uppoffringar inte bara för din egen skull utan också för att ta ansvar för din omgivning, för dina medmänniskor, och för vårt land. Den stunden är nu. Den dagen är här. Och den uppgiften gäller alla." - <a href="https://www.regeringen.se/tal/2020/03/statsministerns-tal-till-nationen-den-22-mars-2020/">Stefan Löfvén, 2020-03-22</a>
 
 </div>
 <div id="footer">#HackTheCrisisSE</div>
@@ -169,15 +195,11 @@
         <div class="slide active" id="slide2">
 			<div class="intro">
 				<h1>Välkommen till Stefanometern!</h1>
-			<div class="flagga1">
-			<img src="imgs/se.png"  alt="1"/>
-		</div>
-		<div class="flagga2">
-	    	<img src="imgs/gb.png"  alt="1"/>
-	    </div>
+			<div class="flagga">
+			<img src="imgs/se.png" id="se" />
+	    	<img src="imgs/gb.png"  id="gb" />
 	    </div>
 				<p>Här kan du fylla i dina corona-styggelser som strider mot Stefan Löfvens tal till nationen och ta reda på vad du kan göra för att göra Stefan glad igen! Tryck på en av pilarna för att välja språk!
-				</p>
 			</div>
 		</div>
 	
