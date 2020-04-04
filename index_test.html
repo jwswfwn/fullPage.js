@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="fullpage.css" />
+
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
+<script src="vendors/easings.min.js"></script>
+
+
+<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+
+<script type="text/javascript" src="fullpage.js"></script>
+
+<script type="text/javascript">
+	new fullpage('#fullpage', {
+		//options here
+		autoScrolling:true,
+		scrollHorizontally: true
+	});
+
+	//methods
+	fullpage_api.setAllowScrolling(false);
+</script>
+<style type="text/css">
+	.section{
+		font-size: 6em;
+		text-align: center;
+	}
+</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+<div id="fullpage">
+	<div class="section">Section 1</div>
+	<div class="section">Section 2</div>
+	<div class="section">Section 3</div>
+	<div class="section">Section 4</div>
+</div>
+
+<script type="text/javascript" src="dist/fullpage.js"></script>
+<script type="text/javascript" src="examples/examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: false
+    });
+</script>
+</body>
+</html>
