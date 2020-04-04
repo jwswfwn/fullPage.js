@@ -32,6 +32,26 @@
 		text-align:center;
 	}
 
+		/* Fixed header and footer.
+	* --------------------------------------- */
+	#header, #footer{
+		position:fixed;
+		height: 40px;
+		display:block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+	#footer{
+		bottom:0px;
+	}
 
 	/* Overwriting styles for the navigation dots (to place it where we want)
 	* --------------------------------------- */
@@ -105,6 +125,9 @@
   <option id="vue-fullpage">Vue-fullpage component</option>
 </select-->
 
+<div id="header">Stefanometern!</div>
+<div id="footer">#HackTheCrisisSE</div>
+
 <div id="fullpage">
     <div class="section active" id="section1">
         <div class="slide" id="slide1">
@@ -145,6 +168,14 @@ Nej, som Stefan Löfven säger: “Det enda sättet att klara av detta är att m
 	<div class="section" id="section2">
 		<div class="intro">
 			<h1>Stefans dom!</h1>
+		</div>
+	</div>
+</div>
+
+	</div>
+		<div class="section" id="section3">
+		<div class="intro">
+			<h1>Botgörelse!</h1>
 		</div>
 	</div>
 </div>

@@ -6,7 +6,7 @@
 	<title>Horizontal navigation dots - fullPage.js</title>
 	<meta name="author" content="Alvaro Trigo Lopez" />
 	<meta name="description" content="fullPage full-screen sliders navigation widh dots." />
-	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,sliders navigation, horizontal navigation,horizontal,navigation,dots" />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,sliders navigation, horizontal navigation,horizontal,navigation, header, footer, absolute, positioned, css, dots" />
 	<meta name="Resource-type" content="Document" />
 
 
@@ -31,7 +31,26 @@
 	.section{
 		text-align:center;
 	}
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header, #footer{
+		position:fixed;
+		height: 40px;
+		display:block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
 
+	#header{
+		top:0px;
+	}
+	#footer{
+		bottom:0px;
+	}
 
 	/* Overwriting styles for the navigation dots (to place it where we want)
 	* --------------------------------------- */
@@ -105,8 +124,11 @@
   <option id="vue-fullpage">Vue-fullpage component</option>
 </select-->
 
+<div id="header">Stefanometern!</div>
+<div id="footer">Footer</div>
+
 <div id="fullpage">
-    <div class="section active" id="section1">
+    <div class="section active" id="section0">
         <div class="slide" id="slide1">
             <div class="intro">
                 <h1>Svenska</h1>
@@ -131,6 +153,8 @@
 
 
 
+
+
 		<!-- Hamstrat varor i stora mängder som du inte behöver?
 Ja det klart, apokalypsen är ju här, då gäller det att vara först. Det är bättre att varorna är hos mig än i affären.
 Nej jag köper det jag behöver så att alla andra också kan göra just det
@@ -151,6 +175,11 @@ Nej, som Stefan Löfven säger: “Det enda sättet att klara av detta är att m
 			<h1>Stefans dom!</h1>
 		</div>
 	</div>
+		<div class="section" id="section3">
+		<div class="intro">
+			<h1>Botgörelse!</h1>
+		</div>
+	</div>
 </div>
 
 
@@ -162,8 +191,9 @@ Nej, som Stefan Löfven säger: “Det enda sättet att klara av detta är att m
         anchors: ['firstPage', 'secondPage', '3rdPage'],
         sectionsColor: ['#8FB98B', '#4BBFC3', '#7BAABE'],
         slidesNavigation: true,
+        css3: true
     });
-</script>
 
+</script>
 </body>
 </html>
