@@ -28,7 +28,28 @@
 		font-size: 15px;
 	}
 
-		#swedish {
+	/* Centered texts in each section
+	* --------------------------------------- 
+	.section{
+		text-align:center;
+	} /* den vägrar liksom sluta vara centrerad vad jag än gör..?*/
+/*
+	.row{
+		width: 100%;
+	} */
+
+	/* Man kanske kan dela upp i kolumner såhär?
+	* --------------------------------------- 
+	#row{
+  column-count: 2 ;
+}*/
+
+	.column{
+		flex: 50%; /* verkar vara ett sätt att den ändrar vidden beroende på hur stor skärmen är??*/
+		float: left;
+	}
+
+			#swedish {
 		color: #fff;
 		font-family: verdana;
 		text-align:left;
@@ -37,19 +58,9 @@
 		color: #fff;
 		font-family: verdana;
 		text-align: right;
+		flex: 50%;
 	}
 
-
-	/* Centered texts in each section
-	* --------------------------------------- */
-	.section{
-		text-align:center;
-	}
-
-	.column{
-		width: 50%;
-		float: left;
-	}
 
 		/* Fixed header and footer.
 	* --------------------------------------- */
@@ -138,13 +149,19 @@ padding-bottom: 0%;
 }
 	#linkstefan:visited {
   color: gray;
+    text-decoration: underline;
+  font-style: normal;
 }
 
 	#linkstefan:hover {
   color: whitesmoke;
+  text-decoration: underline;
+  font-style: normal;
 }
 	#linkstefan:active {
   color: hotpink;
+    text-decoration: underline;
+  font-style: normal;
 }
 
 
@@ -232,7 +249,7 @@ padding-bottom: 0%;
 			<img src="imgs/se.png" id="se" />
 	    	<img src="imgs/gb.png"  id="gb" />
 	    </div>
-	    <div class="row">
+	    <div class="row" id="rows">
 				<div class="column" id="swedish"><p><br><br>I coronakrisens Sverige måste alla hjälpa till och ställa upp för varandra, den svenska strategin i kampen mot viruset heter <i>solidaritet</i>. Men hur ligger du till egentligen? <br><br>Med hjälp av denna unika <b>Stefanometer</b> kan du enkelt ta reda på ditt <b>Corona-avtryck</b>, samt få tips på vad just du kan göra för att göra Stefan glad igen! <br><br>Tryck på en av pilarna för att välja språk!</p></div>
 
 					<div class="column" id="english">
