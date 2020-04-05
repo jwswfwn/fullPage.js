@@ -229,6 +229,45 @@ padding-bottom: 0%;
 		color: #333;
 	}
 
+	#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}10% {
+opacity:1;
+}
+90% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf img.top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+animation-direction: alternate;
+}
+
 	</style>
 
 	<!--[if IE]>
@@ -293,7 +332,12 @@ Nej, som Stefan Löfven säger: “Det enda sättet att klara av detta är att m
 	<div class="section" id="section2">
 		<div class="intro">
 			<h1>Stefans dom!</h1>
+			<div id="cf">
+  				<img class="bottom" src="imgs/happy.png" />
+				<img class="top" src="imgs/proud.png" />
+			</div>
 		</div>
+
 	</div>
 
 		<div class="section" id="section3">
