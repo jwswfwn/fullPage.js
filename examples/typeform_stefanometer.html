@@ -25,7 +25,7 @@
 	.intro p{
 		color: #fff;
 		font-family: verdana;
-		font-size: 15px;
+		
 	}
 
 	/* Centered texts in each section
@@ -43,22 +43,29 @@
 	#row{
   column-count: 2 ;
 }*/
-
+	.row{display: flex;}
 	.column{
 		flex: 50%; /* verkar vara ett sätt att den ändrar vidden beroende på hur stor skärmen är??*/
-		float: left;
+		/*float: left;*/
+		font-size: 8px;
 	}
 
 			#swed {
 		color: #fff;
 		font-family: verdana;
 		text-align:left;
-		float; left;
+		/*float; left;
+width: 50%;
+		
+		font-size: 5px;*/
+		
 
 		}	#eng{
 		color: #fff;
 		font-family: verdana;
 		text-align: right;
+		/*font-size: 5px;
+		width: 50%*/
 	}
 
 
@@ -242,22 +249,21 @@ padding-bottom: 0%;
         <div class="slide" id="slide1">
             <div class="typeform-widget" data-url="https://hampusmanefjord.typeform.com/to/A70rW5" style="width: 100%; height: 100%;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=boUs7K&utm_source=typeform.com-01E528WCZX2T2HXJ1KHQ6CP3X7-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
         </div>
-        <div class="slide active" id="slide2">
-			<div class="intro">
-				<h1>Välkommen till Stefanometern!</h1>
-				<p>Ditt Corona footprint</p>
+    <div class="slide active" id="slide2">
+		<div class="intro">
+			<h1>Välkommen till Stefanometern!</h1>
+			<p>Ditt Corona footprint<br></p>
 			<div id="flagga">
-			<img src="imgs/se.png" id="se" />
-	    	<img src="imgs/gb.png"  id="gb" />
-	    </div>
+				<img src="imgs/se.png" id="se" />
+		    	<img src="imgs/gb.png"  id="gb" />
+	   		</div>
+	   	</div>
 	    <div class="row">
-				<!--div class="column" id="swedish"><p><br><br>I coronakrisens Sverige måste alla hjälpa till och ställa upp för varandra, den svenska strategin i kampen mot viruset heter <i>solidaritet</i>. Men hur ligger du till egentligen? <br><br>Med hjälp av denna unika <b>Stefanometer</b> kan du enkelt ta reda på ditt <b>Corona-avtryck</b>, samt få tips på vad just du kan göra för att göra Stefan glad igen! <br><br>Tryck på en av pilarna för att välja språk!</p></div-->
-				<div class="column">
-						<p id="swed">The corona-affected Sweden needs each and everyone of us to help and take care of one another, The Swedish strategy in the race with the virus is spelled <i>solidarity</i>. But where in all this are you? <br><br>With this unique <b>Stefanometer</b>, you can easily measure your <b>Corona footprint</b>, and get valuable information about how to make the Swedish Prime Minister Stefan happy! <br><br>Press one of the arrows to select language!</p>
-					</div>
-					<div class="column">
-						<p id="eng"><br><br><br>The corona-affected Sweden needs each and everyone of us to help and take care of one another, The Swedish strategy in the race with the virus is spelled <i>solidarity</i>. But where in all this are you? <br><br>With this unique <b>Stefanometer</b>, you can easily measure your <b>Corona footprint</b>, and get valuable information about how to make the Swedish Prime Minister Stefan happy! <br><br>Press one of the arrows to select language!</p>
-					</div>
+			<div class="column">
+					<p id="swed">I coronakrisens Sverige måste alla hjälpa till och ställa upp för varandra, den svenska strategin i kampen mot viruset heter <i>solidaritet</i>. Men hur ligger du till egentligen? <br><br>Med hjälp av denna unika <b>Stefanometer</b> kan du enkelt ta reda på ditt <b>Corona-avtryck</b>, samt få tips på vad just du kan göra för att göra Stefan glad igen! <br><br>Tryck på en av pilarna för att välja språk!</p>
+			</div>
+			<div class="column">
+					<p id="eng">The corona-affected Sweden needs each and everyone of us to help and take care of one another, The Swedish strategy in the race with the virus is spelled <i>solidarity</i>. But where in all this are you? <br><br>With this unique <b>Stefanometer</b>, you can easily measure your <b>Corona footprint</b>, and get valuable information about how to make the Swedish Prime Minister Stefan happy! <br><br>Press one of the arrows to select language!</p>
 			</div>
 		</div>
 	</div>
